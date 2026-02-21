@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "name": "silvabyte-site",
+      "source_dir": "dist",
+      "description": "Silvabyte personal site",
+      "enabled": true
+    }
+  ]
+}
