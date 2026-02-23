@@ -3,6 +3,11 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "dev": "bun --hot ./index.ts",
+    "build": "rm -rf dist && mkdir -p dist && bun build ./frontend.tsx --outdir ./dist --minify && bunx @tailwindcss/cli -i ./styles.css -o ./dist/frontend.css --minify && cp -r images dist/ && sed 's|./frontend.tsx|./frontend.js|; s|./styles.css|./frontend.css|' index.html > dist/index.html",
+    "deploy": "bun run build && godeploy deploy --clear-cache"
+  },
   "devDependencies": {
     "@tailwindcss/cli": "^4.2.0",
     "@types/bun": "latest",

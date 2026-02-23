@@ -25,8 +25,8 @@ function Arrow() {
 function Header() {
   return (
     <header className="flex items-center justify-between py-6">
-      <a href="/" className="text-ink font-medium tracking-tight text-[15px]">
-        silvabyte
+      <a href="/">
+        <img src="./images/logos/icon_128_dark.svg" alt="silvabyte" height="32" width="32" className="h-8 w-8" />
       </a>
       <nav className="flex items-center gap-8">
         <a
@@ -156,8 +156,8 @@ function ProjectsSection() {
                   <Arrow />
                 </h3>
                 <p className="mt-2 text-[15px] leading-relaxed text-stone max-w-[480px]">
-                  A side project exploring what's possible when you dedicate your
-                  weekends to building something of your own.
+                  An online course teaching non-programmers how to build and
+                  command AI agents — no coding required.
                 </p>
               </div>
             </div>
@@ -227,6 +227,7 @@ function Footer() {
         </div>
       </div>
       <div className="mt-16">
+        <img src="./images/logos/SilvaByte.svg" alt="SilvaByte" width="120" className="w-[120px] mb-3" />
         <p className="text-[13px] text-stone-light">
           &copy; {new Date().getFullYear()} SilvaByte, LLC
         </p>
