@@ -228,7 +228,7 @@ function Footer() {
       </div>
       <div className="mt-16">
         <p className="text-[13px] text-stone-light">
-          &copy; {new Date().getFullYear()} Mat Silva
+          &copy; {new Date().getFullYear()} SilvaByte, LLC
         </p>
       </div>
     </footer>
